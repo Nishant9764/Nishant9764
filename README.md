@@ -52,8 +52,6 @@
 * Authentication + Booking System
 * MongoDB + Node + React
 
-👉 *(Add GitHub link here)*
-
 ---
 
 ## 📫 Connect With Me
@@ -62,7 +60,7 @@
   <a href="YOUR_LINKEDIN">
     <img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin"/>
   </a>
-  <a href="mailto:YOUR_EMAIL">
+  <a href="mailto:nishantnishu1903@gmail.com">
     <img src="https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail"/>
   </a>
 </p>
