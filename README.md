@@ -17,38 +17,28 @@
 
 <br>
 
-<p align="center">
-  <code>── INITIALIZING PROFILE ──</code>
-</p>
-
-<br>
-
-<br>
-
-## `02 // SYSTEM PROFILE`
+<!-- ========================================================= -->
+<!-- SECTION 02 — DEVELOPER IDENTITY                          -->
+<!-- ========================================================= -->
 
 <table>
 <tr>
 
-<td width="55%" valign="top">
+<td width="58%" valign="top">
 
-### `WHO IS NISHANT?`
+### `> whoami`
 
-I like building things from the ground up — not just using tools, but understanding what happens underneath them.
+**Nishant**  
+`Full Stack Developer` · `AI Builder`
 
-My work sits at the intersection of **Full-Stack Development, Python, and AI-powered systems**, with a growing focus on turning ideas into useful products.
+I build full-stack applications and explore AI-powered
+systems, with a focus on turning ideas into useful,
+working products.
+
+Currently going deeper into **AI/LLM applications,
+backend engineering, and system design**.
 
 <br>
 
-### `DEVELOPER DNA`
-
 ```text
-                    BUILD
-                      ▲
-                      │
-                      │
-              DEBUG ──●── EXPERIMENT
-                      │
-                      │
-                      ▼
-                 UNDERSTAND
+BUILD → BREAK → DEBUG → IMPROVE → SHIP
