@@ -1,757 +1,737 @@
 <svg
-  width="1200"
-  height="430"
-  viewBox="0 0 1200 430"
+  width="760"
+  height="510"
+  viewBox="0 0 760 510"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
 
   <defs>
 
-    <!-- Main futuristic gradient -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430">
+    <!-- ===================================================== -->
+    <!-- BACKGROUND                                             -->
+    <!-- ===================================================== -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="510">
       <stop offset="0%" stop-color="#020617"/>
       <stop offset="55%" stop-color="#071426"/>
-      <stop offset="100%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#030712"/>
     </linearGradient>
 
-    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cyanGradient" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <linearGradient id="nameGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="45%" stop-color="#67E8F9"/>
       <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
 
-    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#8B5CF6"/>
+    <linearGradient id="purpleGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A78BFA"/>
       <stop offset="100%" stop-color="#6366F1"/>
     </linearGradient>
 
-    <!-- Background glow -->
-    <radialGradient id="glow">
-      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.20"/>
+    <!-- Ambient glow -->
+    <radialGradient id="ambientGlow">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.18"/>
       <stop offset="45%" stop-color="#0EA5E9" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Panel gradient -->
+    <!-- Panel -->
     <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0B172A" stop-opacity="0.96"/>
-      <stop offset="100%" stop-color="#030A15" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.98"/>
     </linearGradient>
 
-    <!-- Border gradient -->
-    <linearGradient id="border" x1="0" y1="0" x2="1200" y2="430">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.55"/>
-      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.45"/>
+    <!-- Border -->
+    <linearGradient id="borderGradient" x1="0" y1="0" x2="760" y2="510">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.55"/>
     </linearGradient>
 
-    <!-- Glow filter -->
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <!-- Grid -->
+    <pattern
+      id="grid"
+      width="28"
+      height="28"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M 28 0 L 0 0 0 28"
+        stroke="#38BDF8"
+        stroke-opacity="0.045"
+        stroke-width="1"
+      />
+    </pattern>
+
+    <!-- Soft glow -->
+    <filter
+      id="glow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%"
+    >
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"
+      />
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Grid -->
-    <pattern
-      id="grid"
-      width="32"
-      height="32"
-      patternUnits="userSpaceOnUse"
+    <!-- Strong glow -->
+    <filter
+      id="strongGlow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%"
     >
-      <path
-        d="M 32 0 L 0 0 0 32"
-        stroke="#38BDF8"
-        stroke-opacity="0.055"
-        stroke-width="1"
+      <feGaussianBlur
+        stdDeviation="10"
+        result="blur"
       />
-    </pattern>
-
-    <!-- Clip -->
-    <clipPath id="rounded">
-      <rect x="8" y="8" width="1184" height="414" rx="18"/>
-    </clipPath>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
   </defs>
 
 
-  <!-- ====================================================== -->
-  <!-- BACKGROUND                                             -->
-  <!-- ====================================================== -->
+  <!-- ===================================================== -->
+  <!-- BASE                                                   -->
+  <!-- ===================================================== -->
 
   <rect
-    x="8"
-    y="8"
-    width="1184"
-    height="414"
-    rx="18"
+    x="7"
+    y="7"
+    width="746"
+    height="496"
+    rx="22"
     fill="url(#bg)"
   />
 
+  <!-- Futuristic grid -->
   <rect
-    x="8"
-    y="8"
-    width="1184"
-    height="414"
-    rx="18"
+    x="7"
+    y="7"
+    width="746"
+    height="496"
+    rx="22"
     fill="url(#grid)"
   />
 
-  <!-- Ambient glow -->
+  <!-- Ambient light -->
   <circle
-    cx="950"
+    cx="650"
     cy="120"
-    r="300"
-    fill="url(#glow)"
+    r="240"
+    fill="url(#ambientGlow)"
   >
     <animate
       attributeName="opacity"
-      values="0.55;0.85;0.55"
-      dur="6s"
+      values="0.55;0.9;0.55"
+      dur="7s"
       repeatCount="indefinite"
     />
   </circle>
 
-  <!-- ====================================================== -->
-  <!-- OUTER FRAME                                            -->
-  <!-- ====================================================== -->
+
+  <!-- ===================================================== -->
+  <!-- FRAME                                                   -->
+  <!-- ===================================================== -->
 
   <rect
-    x="8"
-    y="8"
-    width="1184"
-    height="414"
-    rx="18"
-    stroke="url(#border)"
+    x="7"
+    y="7"
+    width="746"
+    height="496"
+    rx="22"
+    stroke="url(#borderGradient)"
     stroke-width="1.5"
   />
 
   <rect
     x="15"
     y="15"
-    width="1170"
-    height="400"
-    rx="14"
+    width="730"
+    height="480"
+    rx="17"
     stroke="#38BDF8"
-    stroke-opacity="0.08"
+    stroke-opacity="0.07"
   />
 
 
-  <!-- ====================================================== -->
-  <!-- TOP SYSTEM BAR                                         -->
-  <!-- ====================================================== -->
+  <!-- ===================================================== -->
+  <!-- SYSTEM HEADER                                          -->
+  <!-- ===================================================== -->
 
-  <text
-    x="38"
-    y="45"
-    fill="#38BDF8"
-    font-family="monospace"
-    font-size="12"
-    font-weight="700"
-    letter-spacing="2"
-  >
-    NISHANT // DEVELOPER CONTROL CENTER
-  </text>
-
-  <!-- status -->
   <circle
-    cx="1082"
-    cy="40"
+    cx="38"
+    cy="39"
     r="5"
     fill="#22C55E"
-    filter="url(#softGlow)"
+    filter="url(#glow)"
   >
     <animate
       attributeName="opacity"
-      values="1;0.35;1"
+      values="1;0.3;1"
       dur="2s"
       repeatCount="indefinite"
     />
   </circle>
 
   <text
-    x="1095"
-    y="45"
+    x="52"
+    y="44"
     fill="#86EFAC"
-    font-family="monospace"
+    font-family="Segoe UI, Arial, sans-serif"
     font-size="11"
-    letter-spacing="1"
+    font-weight="600"
+    letter-spacing="1.5"
   >
     SYSTEM ONLINE
   </text>
 
-  <line
-    x1="38"
-    y1="62"
-    x2="1162"
-    y2="62"
-    stroke="#38BDF8"
-    stroke-opacity="0.15"
-  />
-
-
-  <!-- ====================================================== -->
-  <!-- TERMINAL PANEL                                         -->
-  <!-- ====================================================== -->
-
-  <rect
-    x="38"
-    y="82"
-    width="390"
-    height="255"
-    rx="12"
-    fill="url(#panel)"
-    stroke="#38BDF8"
-    stroke-opacity="0.25"
-  />
-
-  <!-- Terminal header -->
-  <circle cx="60" cy="104" r="5" fill="#EF4444"/>
-  <circle cx="77" cy="104" r="5" fill="#F59E0B"/>
-  <circle cx="94" cy="104" r="5" fill="#22C55E"/>
-
   <text
-    x="120"
-    y="108"
-    fill="#64748B"
-    font-family="monospace"
-    font-size="10"
+    x="650"
+    y="44"
+    fill="#475569"
+    font-family="Consolas, monospace"
+    font-size="9"
+    letter-spacing="1"
   >
-    bash — profile.sh
+    PROFILE_01
   </text>
 
   <line
-    x1="55"
-    y1="122"
-    x2="410"
-    y2="122"
+    x1="32"
+    y1="62"
+    x2="728"
+    y2="62"
     stroke="#38BDF8"
-    stroke-opacity="0.12"
+    stroke-opacity="0.13"
   />
 
-  <!-- command -->
+
+  <!-- ===================================================== -->
+  <!-- INTRO                                                  -->
+  <!-- ===================================================== -->
+
   <text
-    x="58"
-    y="150"
+    x="38"
+    y="101"
+    fill="#64748B"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="14"
+    font-weight="500"
+    letter-spacing="1.5"
+  >
+    HELLO, I'M
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- TYPING NAME                                            -->
+  <!-- ===================================================== -->
+
+  <!-- Glow behind name -->
+  <text
+    x="36"
+    y="153"
     fill="#22D3EE"
-    font-family="monospace"
+    opacity="0.18"
+    filter="url(#strongGlow)"
+    font-family="Trebuchet MS, Segoe UI, Arial, sans-serif"
+    font-size="48"
+    font-weight="700"
+    letter-spacing="3"
+  >
+    NISHANT
+  </text>
+
+  <!-- Actual name -->
+  <text
+    x="38"
+    y="153"
+    fill="url(#nameGradient)"
+    font-family="Trebuchet MS, Segoe UI, Arial, sans-serif"
+    font-size="48"
+    font-weight="700"
+    letter-spacing="3"
+  >
+    NISHANT
+  </text>
+
+  <!-- Typing reveal -->
+  <clipPath id="nameClip">
+    <rect
+      x="35"
+      y="105"
+      width="0"
+      height="65"
+    >
+      <animate
+        attributeName="width"
+        values="0;0;75;150;230;310;390;430;430"
+        keyTimes="0;0.12;0.20;0.28;0.36;0.44;0.52;0.60;1"
+        dur="3.8s"
+        repeatCount="indefinite"
+      />
+    </rect>
+  </clipPath>
+
+  <!-- Cursor -->
+  <rect
+    x="475"
+    y="116"
+    width="3"
+    height="45"
+    rx="1"
+    fill="#22D3EE"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="1;1;0;0;1"
+      dur="1s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="x"
+      values="42;80;145;205;270;330;395;475"
+      keyTimes="0;0.12;0.22;0.32;0.42;0.52;0.62;1"
+      dur="3.8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+
+  <!-- ===================================================== -->
+  <!-- IDENTITY                                               -->
+  <!-- ===================================================== -->
+
+  <text
+    x="40"
+    y="189"
+    fill="#38BDF8"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+    letter-spacing="2"
+  >
+    FULL STACK
+  </text>
+
+  <text
+    x="155"
+    y="189"
+    fill="#8B5CF6"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+  >
+    ×
+  </text>
+
+  <text
+    x="176"
+    y="189"
+    fill="#A78BFA"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+    letter-spacing="2"
+  >
+    AI
+  </text>
+
+  <text
+    x="40"
+    y="216"
+    fill="#CBD5E1"
+    font-family="Segoe UI, Arial, sans-serif"
     font-size="12"
+  >
+    Building real-world software &amp; intelligent systems.
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- TERMINAL                                               -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="38"
+    y="245"
+    width="420"
+    height="150"
+    rx="13"
+    fill="url(#panel)"
+    stroke="#38BDF8"
+    stroke-opacity="0.20"
+  />
+
+  <!-- terminal dots -->
+  <circle cx="59" cy="266" r="4" fill="#EF4444"/>
+  <circle cx="73" cy="266" r="4" fill="#F59E0B"/>
+  <circle cx="87" cy="266" r="4" fill="#22C55E"/>
+
+  <text
+    x="108"
+    y="270"
+    fill="#475569"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    developer_mode
+  </text>
+
+  <line
+    x1="53"
+    y1="283"
+    x2="443"
+    y2="283"
+    stroke="#38BDF8"
+    stroke-opacity="0.10"
+  />
+
+  <text
+    x="56"
+    y="307"
+    fill="#22D3EE"
+    font-family="Consolas, monospace"
+    font-size="11"
   >
     nishant@github:~$ ./status
   </text>
 
-  <!-- terminal lines -->
   <text
-    x="58"
-    y="178"
+    x="56"
+    y="331"
     fill="#94A3B8"
-    font-family="monospace"
-    font-size="12"
+    font-family="Consolas, monospace"
+    font-size="10"
   >
     &gt; BUILDING
   </text>
 
   <circle
-    cx="175"
-    cy="174"
-    r="4"
+    cx="148"
+    cy="327"
+    r="3.5"
     fill="#22C55E"
+    filter="url(#glow)"
   >
     <animate
       attributeName="opacity"
-      values="1;0.3;1"
-      dur="1.8s"
+      values="1;0.25;1"
+      dur="1.7s"
       repeatCount="indefinite"
     />
   </circle>
 
-
   <text
-    x="58"
-    y="205"
+    x="56"
+    y="354"
     fill="#94A3B8"
-    font-family="monospace"
-    font-size="12"
+    font-family="Consolas, monospace"
+    font-size="10"
   >
     &gt; LEARNING
   </text>
 
   <circle
-    cx="175"
-    cy="201"
-    r="4"
+    cx="148"
+    cy="350"
+    r="3.5"
     fill="#38BDF8"
+    filter="url(#glow)"
   >
     <animate
       attributeName="opacity"
-      values="1;0.3;1"
-      dur="2.2s"
+      values="1;0.25;1"
+      dur="2.1s"
       repeatCount="indefinite"
     />
   </circle>
 
-
   <text
-    x="58"
-    y="232"
+    x="56"
+    y="377"
     fill="#94A3B8"
-    font-family="monospace"
-    font-size="12"
+    font-family="Consolas, monospace"
+    font-size="10"
   >
     &gt; SHIPPING
   </text>
 
   <circle
-    cx="175"
-    cy="228"
-    r="4"
-    fill="#8B5CF6"
+    cx="148"
+    cy="373"
+    r="3.5"
+    fill="#A78BFA"
+    filter="url(#glow)"
   >
     <animate
       attributeName="opacity"
-      values="1;0.3;1"
+      values="1;0.25;1"
       dur="1.5s"
       repeatCount="indefinite"
     />
   </circle>
 
 
-  <!-- Progress -->
-  <text
-    x="58"
-    y="267"
-    fill="#64748B"
-    font-family="monospace"
-    font-size="10"
-  >
-    DEVELOPMENT_PROGRESS
-  </text>
+  <!-- ===================================================== -->
+  <!-- CURRENT FOCUS                                          -->
+  <!-- ===================================================== -->
 
   <rect
-    x="58"
-    y="278"
-    width="300"
-    height="8"
-    rx="4"
-    fill="#0F172A"
-    stroke="#1E293B"
-  />
-
-  <rect
-    x="58"
-    y="278"
-    width="220"
-    height="8"
-    rx="4"
-    fill="url(#cyan)"
-  >
-    <animate
-      attributeName="width"
-      values="205;240;220;235;220"
-      dur="5s"
-      repeatCount="indefinite"
-    />
-  </rect>
-
-  <text
-    x="365"
-    y="286"
-    fill="#38BDF8"
-    font-family="monospace"
-    font-size="10"
-  >
-    ACTIVE
-  </text>
-
-  <!-- cursor -->
-  <text
-    x="58"
-    y="315"
-    fill="#22D3EE"
-    font-family="monospace"
-    font-size="12"
-  >
-    nishant@github:~$
-    <animate
-      attributeName="opacity"
-      values="1;0;1"
-      dur="1s"
-      repeatCount="indefinite"
-    />
-  </text>
-
-
-  <!-- ====================================================== -->
-  <!-- MAIN IDENTITY                                          -->
-  <!-- ====================================================== -->
-
-  <text
-    x="465"
-    y="112"
-    fill="#94A3B8"
-    font-family="monospace"
-    font-size="14"
-  >
-    Hi, I'm
-  </text>
-
-  <text
-    x="465"
-    y="155"
-    fill="#F8FAFC"
-    font-family="monospace"
-    font-size="34"
-    font-weight="700"
-    letter-spacing="1"
-  >
-    NISHANT
-  </text>
-
-  <!-- Accent line -->
-  <rect
-    x="465"
-    y="170"
-    width="70"
-    height="3"
-    rx="1.5"
-    fill="url(#cyan)"
-  >
-    <animate
-      attributeName="width"
-      values="55;90;70"
-      dur="4s"
-      repeatCount="indefinite"
-    />
-  </rect>
-
-
-  <text
-    x="465"
-    y="204"
-    fill="#38BDF8"
-    font-family="monospace"
-    font-size="18"
-    font-weight="700"
-  >
-    FULL STACK × AI
-  </text>
-
-  <text
-    x="465"
-    y="231"
-    fill="#CBD5E1"
-    font-family="monospace"
-    font-size="13"
-  >
-    Building real-world software.
-  </text>
-
-  <text
-    x="465"
-    y="253"
-    fill="#CBD5E1"
-    font-family="monospace"
-    font-size="13"
-  >
-    Exploring intelligent systems.
-  </text>
-
-  <text
-    x="465"
-    y="275"
-    fill="#CBD5E1"
-    font-family="monospace"
-    font-size="13"
-  >
-    Learning how things actually work.
-  </text>
-
-
-  <!-- ====================================================== -->
-  <!-- CURRENT FOCUS PANEL                                    -->
-  <!-- ====================================================== -->
-
-  <rect
-    x="465"
-    y="300"
-    width="330"
-    height="70"
-    rx="10"
-    fill="#020617"
+    x="478"
+    y="245"
+    width="244"
+    height="150"
+    rx="13"
+    fill="#030A15"
     stroke="#8B5CF6"
-    stroke-opacity="0.35"
+    stroke-opacity="0.25"
   />
 
   <text
-    x="485"
-    y="324"
-    fill="#8B5CF6"
-    font-family="monospace"
-    font-size="10"
-    letter-spacing="1"
+    x="500"
+    y="271"
+    fill="#A78BFA"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="9"
+    font-weight="700"
+    letter-spacing="1.5"
   >
     CURRENT FOCUS
   </text>
 
   <text
-    x="485"
-    y="348"
+    x="500"
+    y="302"
     fill="#F8FAFC"
-    font-family="monospace"
-    font-size="13"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="16"
     font-weight="700"
   >
     AI / LLM SYSTEMS
   </text>
 
   <text
-    x="485"
-    y="364"
+    x="500"
+    y="324"
     fill="#64748B"
-    font-family="monospace"
+    font-family="Consolas, monospace"
     font-size="9"
   >
-    RAG • AGENTS • BACKEND • PRODUCTS
+    RAG
   </text>
-
-
-  <!-- ====================================================== -->
-  <!-- TELEMETRY PANEL                                        -->
-  <!-- ====================================================== -->
-
-  <rect
-    x="820"
-    y="82"
-    width="342"
-    height="288"
-    rx="12"
-    fill="url(#panel)"
-    stroke="#22D3EE"
-    stroke-opacity="0.22"
-  />
 
   <text
-    x="845"
-    y="112"
-    fill="#22D3EE"
-    font-family="monospace"
-    font-size="11"
-    font-weight="700"
-    letter-spacing="1"
+    x="550"
+    y="324"
+    fill="#334155"
+    font-family="Consolas, monospace"
+    font-size="9"
   >
-    SYSTEM TELEMETRY
+    •
   </text>
 
-  <!-- Radar -->
+  <text
+    x="565"
+    y="324"
+    fill="#64748B"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    AGENTS
+  </text>
+
+  <text
+    x="625"
+    y="324"
+    fill="#334155"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    •
+  </text>
+
+  <text
+    x="640"
+    y="324"
+    fill="#64748B"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    BACKEND
+  </text>
+
+  <!-- Focus indicator -->
   <circle
-    cx="990"
-    cy="195"
-    r="78"
+    cx="503"
+    cy="355"
+    r="4"
+    fill="#22D3EE"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="r"
+      values="3;5;3"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="516"
+    y="359"
+    fill="#94A3B8"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="10"
+  >
+    exploring • building • shipping
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- BOTTOM COMMAND                                         -->
+  <!-- ===================================================== -->
+
+  <line
+    x1="38"
+    y1="425"
+    x2="722"
+    y2="425"
     stroke="#38BDF8"
     stroke-opacity="0.10"
   />
 
-  <circle
-    cx="990"
-    cy="195"
-    r="55"
-    stroke="#38BDF8"
-    stroke-opacity="0.15"
-  />
-
-  <circle
-    cx="990"
-    cy="195"
-    r="30"
-    stroke="#38BDF8"
-    stroke-opacity="0.20"
-  />
-
-  <circle
-    cx="990"
-    cy="195"
-    r="5"
-    fill="#22D3EE"
-    filter="url(#softGlow)"
-  />
-
-  <!-- rotating radar line -->
-  <line
-    x1="990"
-    y1="195"
-    x2="990"
-    y2="117"
-    stroke="#22D3EE"
-    stroke-opacity="0.8"
-  >
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 990 195"
-      to="360 990 195"
-      dur="6s"
-      repeatCount="indefinite"
-    />
-  </line>
-
   <text
-    x="948"
-    y="200"
-    fill="#F8FAFC"
-    font-family="monospace"
-    font-size="12"
-    font-weight="700"
+    x="38"
+    y="451"
+    fill="#475569"
+    font-family="Consolas, monospace"
+    font-size="9"
+    letter-spacing="1"
   >
     BUILD
   </text>
 
-  <!-- telemetry metrics -->
   <text
-    x="845"
-    y="295"
-    fill="#64748B"
-    font-family="monospace"
+    x="78"
+    y="451"
+    fill="#334155"
+    font-family="Consolas, monospace"
     font-size="9"
   >
-    FULL_STACK
+    →
   </text>
 
-  <rect
-    x="845"
-    y="303"
-    width="270"
-    height="5"
-    rx="2.5"
-    fill="#0F172A"
-  />
+  <text
+    x="96"
+    y="451"
+    fill="#475569"
+    font-family="Consolas, monospace"
+    font-size="9"
+    letter-spacing="1"
+  >
+    DEBUG
+  </text>
 
-  <rect
-    x="845"
-    y="303"
-    width="210"
-    height="5"
-    rx="2.5"
+  <text
+    x="146"
+    y="451"
+    fill="#334155"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    →
+  </text>
+
+  <text
+    x="164"
+    y="451"
+    fill="#475569"
+    font-family="Consolas, monospace"
+    font-size="9"
+    letter-spacing="1"
+  >
+    LEARN
+  </text>
+
+  <text
+    x="214"
+    y="451"
+    fill="#334155"
+    font-family="Consolas, monospace"
+    font-size="9"
+  >
+    →
+  </text>
+
+  <text
+    x="232"
+    y="451"
     fill="#38BDF8"
-  />
+    font-family="Consolas, monospace"
+    font-size="9"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    SHIP
+  </text>
 
   <text
-    x="1125"
-    y="309"
-    fill="#38BDF8"
-    font-family="monospace"
+    x="603"
+    y="451"
+    fill="#334155"
+    font-family="Consolas, monospace"
     font-size="9"
   >
-    ACTIVE
+    // v1.0
   </text>
 
 
-  <text
-    x="845"
-    y="330"
-    fill="#64748B"
-    font-family="monospace"
-    font-size="9"
-  >
-    AI_SYSTEMS
-  </text>
-
-  <rect
-    x="845"
-    y="338"
-    width="270"
-    height="5"
-    rx="2.5"
-    fill="#0F172A"
-  />
-
-  <rect
-    x="845"
-    y="338"
-    width="165"
-    height="5"
-    rx="2.5"
-    fill="#8B5CF6"
-  />
-
-  <text
-    x="1125"
-    y="344"
-    fill="#A78BFA"
-    font-family="monospace"
-    font-size="9"
-  >
-    LEARNING
-  </text>
-
-
-  <!-- ====================================================== -->
-  <!-- SCANNING LINE                                          -->
-  <!-- ====================================================== -->
+  <!-- ===================================================== -->
+  <!-- SCAN LINE                                              -->
+  <!-- ===================================================== -->
 
   <rect
     x="25"
-    y="75"
+    y="70"
     width="2"
-    height="330"
+    height="410"
     fill="#22D3EE"
     opacity="0"
   >
     <animate
       attributeName="x"
-      values="25;1175;25"
-      dur="9s"
+      values="25;735;25"
+      dur="10s"
       repeatCount="indefinite"
     />
 
     <animate
       attributeName="opacity"
-      values="0;0.5;0"
-      dur="9s"
+      values="0;0.35;0"
+      dur="10s"
       repeatCount="indefinite"
     />
   </rect>
-
-
-  <!-- ====================================================== -->
-  <!-- BOTTOM SIGNAL                                          -->
-  <!-- ====================================================== -->
-
-  <path
-    d="M 465 390
-       L 500 390
-       L 510 382
-       L 520 390
-       L 545 390
-       L 555 374
-       L 565 390
-       L 590 390
-       L 602 384
-       L 612 390
-       L 650 390"
-    stroke="#22D3EE"
-    stroke-opacity="0.45"
-    stroke-width="1.5"
-    fill="none"
-  >
-    <animate
-      attributeName="stroke-opacity"
-      values="0.2;0.8;0.2"
-      dur="3s"
-      repeatCount="indefinite"
-    />
-  </path>
-
-  <text
-    x="675"
-    y="394"
-    fill="#475569"
-    font-family="monospace"
-    font-size="9"
-    letter-spacing="2"
-  >
-    BUILD • DEBUG • LEARN • SHIP
-  </text>
 
 </svg>
