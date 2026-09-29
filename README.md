@@ -87,38 +87,6 @@
   <img src="./connect.svg" width="100%" alt="Contact Orbit"/>
 </p>
 
-<!-- GITHUB ACTIVITY -->
-
-<p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Nishant9764&bg_color=070B16&color=00E5FF&line=7C5CFF&point=FF4FD8&area=true&hide_border=true"
-    width="100%"
-  />
-</p>
-
-<!-- GITHUB STATS -->
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=A9B7D0&icon_color=7C5CFF"
-    height="180"
-  />
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nishant9764&layout=compact&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=A9B7D0"
-    height="180"
-  />
-</p>
-
-<!-- CONTRIBUTION SNAKE -->
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/YOUR_USERNAME/Nishant9764/output/github-contribution-grid-snake-dark.svg"
-    width="100%"
-    alt="GitHub Contribution Snake"
-  />
-</p>
 
 <p align="center">
   <img src="./footer.svg" width="100%" alt="Developer Footer"/>
