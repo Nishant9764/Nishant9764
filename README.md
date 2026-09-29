@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="./assets/hero.svg"
+    src="/hero.svg"
     width="100%"
     alt="Nishant — Full Stack Developer and AI Builder"
   />
