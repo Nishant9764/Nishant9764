@@ -38,3 +38,9 @@
 <p align="center">
   <img src="./projects.svg" width="100%" alt="Selected Projects"/>
 </p>
+
+## 05 / HOW I BUILD
+
+<p align="center">
+  <img src="./how-i-build.svg" width="100%" alt="How I Build"/>
+</p>
