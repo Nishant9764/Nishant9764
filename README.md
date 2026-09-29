@@ -50,3 +50,23 @@
 <p align="center">
   <img src="./engineering-stack.svg" width="100%" alt="Engineering Stack"/>
 </p>
+
+## 07 / GITHUB TELEMETRY
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=A9B7D0&icon_color=7C5CFF"
+    height="180"
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nishant9764&layout=compact&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=A9B7D0"
+    height="180"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=Nishant9764&hide_border=true&background=070B16&ring=00E5FF&fire=FF4FD8&currStreakLabel=00E5FF&sideLabels=A9B7D0&dates=52627C"
+    width="90%"
+  />
+</p>
