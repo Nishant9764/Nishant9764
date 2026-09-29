@@ -33,9 +33,6 @@
   />
 </p>
 
-<br>
-## 03 / CURRENT MISSION
-
 <p align="center">
   <img src="./mission.svg" width="100%" alt="Current Mission"/>
 </p>
