@@ -21,24 +21,16 @@
 <!-- SECTION 02 — DEVELOPER IDENTITY                          -->
 <!-- ========================================================= -->
 
-<table>
-<tr>
+<!-- ========================================================= -->
+<!-- SECTION 02 — DEVELOPER IDENTITY                          -->
+<!-- ========================================================= -->
 
-<td width="58%" valign="top">
-
-### `> whoami`
-
-**Nishant**  
-`Full Stack Developer` · `AI Builder`
-
-I build full-stack applications and explore AI-powered
-systems, with a focus on turning ideas into useful,
-working products.
-
-Currently going deeper into **AI/LLM applications,
-backend engineering, and system design**.
+<p align="center">
+  <img
+    src="./identity.svg"
+    width="100%"
+    alt="Nishant — Developer Identity and Current Focus"
+  />
+</p>
 
 <br>
-
-```text
-BUILD → BREAK → DEBUG → IMPROVE → SHIP
