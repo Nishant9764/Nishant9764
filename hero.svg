@@ -604,33 +604,71 @@
 
   <!-- FULLY VISIBLE TYPING CURSOR -->
 
-  <rect
-    x="465"
-    y="150"
-    width="5"
-    height="66"
-    rx="2"
-    fill="#22D3EE"
-    filter="url(#smallGlow)"
-  >
+  <!-- =====================================================
+     TYPING CURSOR — FIXED
+====================================================== -->
 
-    <animate
-      attributeName="x"
-      values="465;465;733;733;465"
-      keyTimes="0;0.13;0.53;0.78;1"
-      dur="8s"
-      repeatCount="indefinite"
-    />
+<rect
+  x="465"
+  y="153"
+  width="4"
+  height="58"
+  rx="2"
+  fill="#22D3EE"
+  filter="url(#smallGlow)"
+>
 
-    <animate
-      attributeName="opacity"
-      values="1;0;1;0;1"
-      keyTimes="0;0.08;0.53;0.72;0.9"
-      dur="1s"
-      repeatCount="indefinite"
-    />
+  <!-- Cursor moves to the END of the revealed name -->
+  <animate
+    attributeName="x"
+    values="
+      465;
+      465;
+      485;
+      510;
+      535;
+      560;
+      585;
+      610;
+      635;
+      660;
+      685;
+      710;
+      730;
+      730;
+      465
+    "
+    keyTimes="
+      0;
+      0.13;
+      0.18;
+      0.23;
+      0.28;
+      0.33;
+      0.38;
+      0.43;
+      0.48;
+      0.53;
+      0.58;
+      0.63;
+      0.68;
+      0.78;
+      1
+    "
+    dur="8s"
+    repeatCount="indefinite"
+  />
 
-  </rect>
+  <!-- Blinking cursor -->
+  <animate
+    attributeName="opacity"
+    values="1;1;0;0;1;1"
+    keyTimes="0;0.45;0.48;0.58;0.61;1"
+    dur="1s"
+    repeatCount="indefinite"
+  />
+
+</rect>
 
 
   <!-- =====================================================
