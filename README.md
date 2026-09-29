@@ -21,10 +21,6 @@
 <!-- SECTION 02 — DEVELOPER IDENTITY                          -->
 <!-- ========================================================= -->
 
-<!-- ========================================================= -->
-<!-- SECTION 02 — DEVELOPER IDENTITY                          -->
-<!-- ========================================================= -->
-
 <p align="center">
   <img
     src="./identity.svg"
@@ -35,4 +31,10 @@
 
 <p align="center">
   <img src="./mission.svg" width="100%" alt="Current Mission"/>
+</p>
+
+## 04 / SELECTED PROJECTS
+
+<p align="center">
+  <img src="./projects.svg" width="100%" alt="Selected Projects"/>
 </p>
