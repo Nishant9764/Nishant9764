@@ -44,3 +44,9 @@
 <p align="center">
   <img src="./how-i-build.svg" width="100%" alt="How I Build"/>
 </p>
+
+## 06 / ENGINEERING STACK
+
+<p align="center">
+  <img src="./engineering-stack.svg" width="100%" alt="Engineering Stack"/>
+</p>
