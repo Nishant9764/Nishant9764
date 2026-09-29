@@ -22,3 +22,33 @@
 </p>
 
 <br>
+
+<br>
+
+## `02 // SYSTEM PROFILE`
+
+<table>
+<tr>
+
+<td width="55%" valign="top">
+
+### `WHO IS NISHANT?`
+
+I like building things from the ground up — not just using tools, but understanding what happens underneath them.
+
+My work sits at the intersection of **Full-Stack Development, Python, and AI-powered systems**, with a growing focus on turning ideas into useful products.
+
+<br>
+
+### `DEVELOPER DNA`
+
+```text
+                    BUILD
+                      ▲
+                      │
+                      │
+              DEBUG ──●── EXPERIMENT
+                      │
+                      │
+                      ▼
+                 UNDERSTAND
