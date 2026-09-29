@@ -118,26 +118,26 @@
          NAME TYPING CLIP
     ====================================================== -->
 
-    <clipPath id="nameClip">
+   <clipPath id="nameClip">
 
-      <rect
-        x="465"
-        y="145"
-        width="0"
-        height="85"
-      >
+  <rect
+    x="465"
+    y="145"
+    width="0"
+    height="85"
+  >
 
-        <animate
-          attributeName="width"
-          values="0;0;275;275;0"
-          keyTimes="0;0.13;0.53;0.78;1"
-          dur="8s"
-          repeatCount="indefinite"
-        />
+    <animate
+      attributeName="width"
+      values="0;0;300;300;0"
+      keyTimes="0;0.13;0.53;0.78;1"
+      dur="8s"
+      repeatCount="indefinite"
+    />
 
-      </rect>
+  </rect>
 
-    </clipPath>
+</clipPath>
 
 
     <!-- =====================================================
