@@ -1,28 +1,34 @@
 <!-- ========================================================= -->
-<!-- SECTION 01 — CINEMATIC HERO                              -->
+<!-- SECTION 01 — DEVELOPER HERO                              -->
 <!-- ========================================================= -->
 
-<p align="center">
-  <img
-    src="./hero-scene.png"
-    width="100%"
-    alt="Developer working at night — Build, Learn, Improve, Repeat"
-  />
-</p>
+<table>
+  <tr>
 
-<br>
+    <!-- CINEMATIC SIDE -->
+    <td width="48%" valign="top">
 
-<!-- ========================================================= -->
-<!-- SECTION 01B — DEVELOPER CONTROL CENTER                   -->
-<!-- ========================================================= -->
+      <img
+        src="./hero-scene.png"
+        width="100%"
+        alt="Developer workspace — Build, Learn, Improve, Repeat"
+      />
 
-<p align="center">
-  <img
-    src="/hero.svg"
-    width="100%"
-    alt="Nishant — Developer Control Center"
-  />
-</p>
+    </td>
+
+    <!-- DEVELOPER CONTROL CENTER -->
+    <td width="52%" valign="top">
+
+      <img
+        src="./hero.svg"
+        width="100%"
+        alt="Nishant — Developer Control Center"
+      />
+
+    </td>
+
+  </tr>
+</table>
 
 <br>
 
