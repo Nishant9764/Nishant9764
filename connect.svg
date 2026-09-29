@@ -1,0 +1,795 @@
+<svg
+  width="1200"
+  height="520"
+  viewBox="0 0 1200 520"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <radialGradient id="spaceGlow" cx="0" cy="0" r="1"
+      gradientTransform="translate(610 290) rotate(90) scale(330 600)">
+      <stop offset="0" stop-color="#101C38"/>
+      <stop offset="0.55" stop-color="#080D1B"/>
+      <stop offset="1" stop-color="#050811"/>
+    </radialGradient>
+
+    <pattern
+      id="grid"
+      width="42"
+      height="42"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M42 0H0V42"
+        stroke="#15213A"
+        stroke-width="1"
+      />
+    </pattern>
+
+    <!-- ================= EARTH ================= -->
+
+    <radialGradient id="earth"
+      cx="35%"
+      cy="28%"
+      r="75%"
+    >
+      <stop offset="0" stop-color="#214B78"/>
+      <stop offset="0.45" stop-color="#102D55"/>
+      <stop offset="0.78" stop-color="#081A34"/>
+      <stop offset="1" stop-color="#040B18"/>
+    </radialGradient>
+
+    <linearGradient id="earthAtmosphere"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#347CFF"/>
+      <stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+
+    <!-- ================= SIGNAL ================= -->
+
+    <linearGradient
+      id="signal"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="0"
+    >
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+
+    <linearGradient
+      id="signalFade"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="0"
+    >
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7C5CFF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FF4FD8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ================= GLOWS ================= -->
+
+    <filter id="cyanGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="tinyGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ================= EARTH CLIP ================= -->
+
+    <clipPath id="earthClip">
+      <circle
+        cx="930"
+        cy="390"
+        r="118"
+      />
+    </clipPath>
+
+  </defs>
+
+
+  <!-- =====================================================
+       SPACE
+  ====================================================== -->
+
+  <rect
+    width="1200"
+    height="520"
+    fill="url(#spaceGlow)"
+  />
+
+  <rect
+    width="1200"
+    height="520"
+    fill="url(#grid)"
+    opacity="0.32"
+  />
+
+
+  <!-- =====================================================
+       STARS
+  ====================================================== -->
+
+  <g fill="#8DA7D4">
+
+    <circle cx="90" cy="72" r="1"/>
+    <circle cx="160" cy="150" r="1.5"/>
+    <circle cx="230" cy="55" r="1"/>
+    <circle cx="315" cy="120" r="1"/>
+    <circle cx="390" cy="62" r="1.4"/>
+    <circle cx="470" cy="155" r="1"/>
+    <circle cx="540" cy="82" r="1.5"/>
+    <circle cx="680" cy="60" r="1"/>
+    <circle cx="750" cy="130" r="1.4"/>
+    <circle cx="850" cy="70" r="1"/>
+    <circle cx="1010" cy="55" r="1.3"/>
+    <circle cx="1100" cy="125" r="1"/>
+    <circle cx="1150" cy="75" r="1.5"/>
+
+  </g>
+
+
+  <!-- =====================================================
+       SECTION LABEL
+  ====================================================== -->
+
+  <text
+    x="72"
+    y="70"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="3"
+  >
+    09 / CONTACT ORBIT
+  </text>
+
+
+  <!-- =====================================================
+       MAIN COPY
+  ====================================================== -->
+
+  <text
+    x="72"
+    y="142"
+    fill="#F4F7FF"
+    font-family="Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    LET'S BUILD
+  </text>
+
+  <text
+    x="72"
+    y="187"
+    fill="url(#signal)"
+    font-family="Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    SOMETHING USEFUL.
+  </text>
+
+  <text
+    x="72"
+    y="216"
+    fill="#64728D"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+  >
+    SIGNAL RECEIVED // CONNECTION READY
+  </text>
+
+
+  <!-- =====================================================
+       CONNECTION NODES
+  ====================================================== -->
+
+  <!-- GITHUB -->
+
+  <g>
+
+    <rect
+      x="72"
+      y="255"
+      width="205"
+      height="52"
+      rx="9"
+      fill="#091321"
+      stroke="#203650"
+    />
+
+    <circle
+      cx="99"
+      cy="281"
+      r="6"
+      fill="#00E5FF"
+      filter="url(#tinyGlow)"
+    >
+      <animate
+        attributeName="r"
+        values="5;8;5"
+        dur="2s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <text
+      x="120"
+      y="286"
+      fill="#DCE7F8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2"
+    >
+      GITHUB
+    </text>
+
+    <text
+      x="250"
+      y="286"
+      text-anchor="end"
+      fill="#50627E"
+      font-family="monospace"
+      font-size="10"
+    >
+      ↗
+    </text>
+
+  </g>
+
+
+  <!-- LINKEDIN -->
+
+  <g>
+
+    <rect
+      x="72"
+      y="322"
+      width="205"
+      height="52"
+      rx="9"
+      fill="#0B1120"
+      stroke="#2A3153"
+    />
+
+    <circle
+      cx="99"
+      cy="348"
+      r="6"
+      fill="#7C5CFF"
+      filter="url(#tinyGlow)"
+    >
+      <animate
+        attributeName="r"
+        values="5;8;5"
+        dur="2.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <text
+      x="120"
+      y="353"
+      fill="#DCE7F8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2"
+    >
+      LINKEDIN
+    </text>
+
+    <text
+      x="250"
+      y="353"
+      text-anchor="end"
+      fill="#50627E"
+      font-family="monospace"
+      font-size="10"
+    >
+      ↗
+    </text>
+
+  </g>
+
+
+  <!-- EMAIL -->
+
+  <g>
+
+    <rect
+      x="72"
+      y="389"
+      width="205"
+      height="52"
+      rx="9"
+      fill="#120E1D"
+      stroke="#49304D"
+    />
+
+    <circle
+      cx="99"
+      cy="415"
+      r="6"
+      fill="#FF4FD8"
+      filter="url(#tinyGlow)"
+    >
+      <animate
+        attributeName="r"
+        values="5;8;5"
+        dur="2.2s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <text
+      x="120"
+      y="420"
+      fill="#DCE7F8"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="2"
+    >
+      EMAIL
+    </text>
+
+    <text
+      x="250"
+      y="420"
+      text-anchor="end"
+      fill="#50627E"
+      font-family="monospace"
+      font-size="10"
+    >
+      ↗
+    </text>
+
+  </g>
+
+
+  <!-- =====================================================
+       SIGNAL PATH TO EARTH
+  ====================================================== -->
+
+  <path
+    d="M305 282
+       C430 250 500 275 590 270
+       C690 265 735 290 820 325"
+    stroke="url(#signalFade)"
+    stroke-width="12"
+    opacity="0.16"
+    filter="url(#softGlow)"
+  />
+
+  <path
+    d="M305 282
+       C430 250 500 275 590 270
+       C690 265 735 290 820 325"
+    stroke="url(#signal)"
+    stroke-width="1.5"
+    stroke-dasharray="5 9"
+    opacity="0.7"
+  />
+
+  <!-- moving communication pulse -->
+
+  <circle
+    cx="305"
+    cy="282"
+    r="4"
+    fill="#00E5FF"
+    filter="url(#cyanGlow)"
+  >
+
+    <animateMotion
+      dur="3s"
+      repeatCount="indefinite"
+      path="M0 0
+            C125 -32 195 -7 285 -12
+            C385 -17 430 8 515 43"
+    />
+
+  </circle>
+
+
+  <!-- =====================================================
+       EARTH ATMOSPHERE
+  ====================================================== -->
+
+  <circle
+    cx="930"
+    cy="390"
+    r="130"
+    stroke="url(#earthAtmosphere)"
+    stroke-width="1"
+    opacity="0.2"
+    filter="url(#softGlow)"
+  />
+
+  <circle
+    cx="930"
+    cy="390"
+    r="124"
+    stroke="#00E5FF"
+    stroke-width="1"
+    opacity="0.3"
+  />
+
+
+  <!-- =====================================================
+       EARTH
+  ====================================================== -->
+
+  <circle
+    cx="930"
+    cy="390"
+    r="118"
+    fill="url(#earth)"
+  />
+
+  <g clip-path="url(#earthClip)">
+
+    <!-- latitude -->
+
+    <ellipse
+      cx="930"
+      cy="390"
+      rx="116"
+      ry="38"
+      stroke="#3E75A8"
+      stroke-width="1"
+      opacity="0.25"
+    />
+
+    <ellipse
+      cx="930"
+      cy="390"
+      rx="116"
+      ry="75"
+      stroke="#3E75A8"
+      stroke-width="1"
+      opacity="0.18"
+    />
+
+    <!-- longitude -->
+
+    <ellipse
+      cx="930"
+      cy="390"
+      rx="40"
+      ry="118"
+      stroke="#3E75A8"
+      stroke-width="1"
+      opacity="0.22"
+    />
+
+    <ellipse
+      cx="930"
+      cy="390"
+      rx="78"
+      ry="118"
+      stroke="#3E75A8"
+      stroke-width="1"
+      opacity="0.16"
+    />
+
+    <!-- stylized continents -->
+
+    <path
+      d="
+        M862 321
+        C880 306 906 310 915 325
+        L903 340
+        L884 345
+        L874 360
+        L853 350
+        Z
+      "
+      fill="#2B5875"
+      opacity="0.7"
+    />
+
+    <path
+      d="
+        M956 322
+        C979 315 1000 330 1007 348
+        L993 363
+        L975 356
+        L962 370
+        L945 351
+        Z
+      "
+      fill="#28536F"
+      opacity="0.72"
+    />
+
+    <path
+      d="
+        M915 371
+        L937 363
+        L952 382
+        L945 402
+        L925 414
+        L913 397
+        Z
+      "
+      fill="#315F78"
+      opacity="0.72"
+    />
+
+    <path
+      d="
+        M975 390
+        L1000 385
+        L1014 407
+        L1002 430
+        L977 421
+        L968 405
+        Z
+      "
+      fill="#244B68"
+      opacity="0.65"
+    />
+
+    <!-- city lights -->
+
+    <g fill="#00E5FF">
+
+      <circle cx="893" cy="337" r="1.3"/>
+      <circle cx="905" cy="346" r="1"/>
+      <circle cx="981" cy="344" r="1.2"/>
+      <circle cx="991" cy="354" r="0.9"/>
+      <circle cx="935" cy="387" r="1.2"/>
+      <circle cx="951" cy="394" r="0.9"/>
+      <circle cx="987" cy="401" r="1.1"/>
+      <circle cx="1001" cy="414" r="0.9"/>
+
+    </g>
+
+  </g>
+
+
+  <!-- =====================================================
+       SATELLITE ORBIT
+  ====================================================== -->
+
+  <ellipse
+    cx="930"
+    cy="390"
+    rx="205"
+    ry="76"
+    transform="rotate(-18 930 390)"
+    stroke="#41527B"
+    stroke-width="1"
+    stroke-dasharray="4 8"
+    opacity="0.45"
+  />
+
+  <!-- moving orbital signal -->
+
+  <circle
+    cx="930"
+    cy="314"
+    r="4"
+    fill="#FF4FD8"
+    filter="url(#cyanGlow)"
+  >
+
+    <animateMotion
+      dur="7s"
+      repeatCount="indefinite"
+      path="
+        M0 0
+        C-90 -45 -205 5 -170 75
+        C-130 145 65 150 170 72
+        C220 35 115 -35 0 0
+      "
+    />
+
+  </circle>
+
+
+  <!-- =====================================================
+       SATELLITE
+  ====================================================== -->
+
+  <g>
+
+    <!-- body -->
+
+    <rect
+      x="903"
+      y="276"
+      width="34"
+      height="20"
+      rx="4"
+      fill="#111C31"
+      stroke="#8AA3C9"
+      stroke-width="1"
+    />
+
+    <!-- left panel -->
+
+    <rect
+      x="865"
+      y="278"
+      width="31"
+      height="16"
+      rx="2"
+      fill="#102D50"
+      stroke="#00E5FF"
+      stroke-width="1"
+    />
+
+    <!-- right panel -->
+
+    <rect
+      x="944"
+      y="278"
+      width="31"
+      height="16"
+      rx="2"
+      fill="#24194B"
+      stroke="#7C5CFF"
+      stroke-width="1"
+    />
+
+    <!-- antenna -->
+
+    <path
+      d="M920 276V262"
+      stroke="#A8B9D5"
+      stroke-width="1"
+    />
+
+    <circle
+      cx="920"
+      cy="259"
+      r="3"
+      fill="#FF4FD8"
+      filter="url(#tinyGlow)"
+    >
+      <animate
+        attributeName="opacity"
+        values="1;0.25;1"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <!-- signal waves -->
+
+    <path
+      d="M934 263
+         C950 253 950 240 934 230"
+      stroke="#00E5FF"
+      stroke-width="1"
+      opacity="0.7"
+    />
+
+    <path
+      d="M940 268
+         C965 250 965 230 940 212"
+      stroke="#7C5CFF"
+      stroke-width="1"
+      opacity="0.4"
+    />
+
+  </g>
+
+
+  <!-- =====================================================
+       EARTH → SATELLITE SIGNAL
+  ====================================================== -->
+
+  <path
+    d="M848 342
+       C850 315 865 293 901 286"
+    stroke="#00E5FF"
+    stroke-width="1"
+    stroke-dasharray="3 6"
+    opacity="0.5"
+  />
+
+  <circle
+    cx="848"
+    cy="342"
+    r="3"
+    fill="#00E5FF"
+    filter="url(#tinyGlow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- =====================================================
+       TELEMETRY
+  ====================================================== -->
+
+  <text
+    x="820"
+    y="475"
+    fill="#50627C"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2"
+  >
+    ORBIT // SIGNAL // CONNECT // BUILD
+  </text>
+
+  <text
+    x="1128"
+    y="475"
+    text-anchor="end"
+    fill="#263650"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2"
+  >
+    LINK / 09
+  </text>
+
+
+  <!-- =====================================================
+       SCAN LINE
+  ====================================================== -->
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="1"
+    fill="url(#signal)"
+    opacity="0.18"
+  >
+
+    <animate
+      attributeName="y"
+      values="0;520;0"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+  </rect>
+
+</svg>
