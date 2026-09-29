@@ -70,3 +70,13 @@
     width="90%"
   />
 </p>
+
+## 08 / CONTRIBUTION SIGNAL
+
+<p align="center">
+  <img
+    src="./contribution-signal.svg"
+    width="100%"
+    alt="Contribution Signal"
+  />
+</p>
