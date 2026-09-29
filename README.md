@@ -119,3 +119,7 @@
     alt="GitHub Contribution Snake"
   />
 </p>
+
+<p align="center">
+  <img src="./footer.svg" width="100%" alt="Developer Footer"/>
+</p>
