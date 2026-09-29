@@ -1,0 +1,532 @@
+<svg
+  width="1200"
+  height="190"
+  viewBox="0 0 1200 190"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="190">
+      <stop offset="0" stop-color="#060A15"/>
+      <stop offset="0.5" stop-color="#090D1B"/>
+      <stop offset="1" stop-color="#070A14"/>
+    </linearGradient>
+
+    <!-- Main neon -->
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+
+    <!-- Quote gradient -->
+    <linearGradient id="quote" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E7EEFF"/>
+      <stop offset="1" stop-color="#AAB8D6"/>
+    </linearGradient>
+
+    <!-- Grid -->
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M32 0H0V32"
+        stroke="#17233B"
+        stroke-width="1"
+      />
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <rect
+    width="1200"
+    height="190"
+    rx="14"
+    fill="url(#bg)"
+  />
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="188"
+    rx="13"
+    fill="url(#grid)"
+    opacity="0.3"
+  />
+
+
+  <!-- =====================================================
+       OUTER FRAME
+  ====================================================== -->
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="188"
+    rx="13"
+    stroke="#28365A"
+    stroke-width="1"
+  />
+
+  <rect
+    x="2"
+    y="2"
+    width="1196"
+    height="186"
+    rx="12"
+    stroke="url(#neon)"
+    stroke-width="1"
+    opacity="0.22"
+  />
+
+
+  <!-- =====================================================
+       LEFT QUOTE PANEL
+  ====================================================== -->
+
+  <rect
+    x="20"
+    y="20"
+    width="365"
+    height="150"
+    rx="10"
+    fill="#080D19"
+    stroke="#202D49"
+  />
+
+  <!-- Accent line -->
+
+  <rect
+    x="20"
+    y="20"
+    width="4"
+    height="150"
+    rx="2"
+    fill="#FF4FD8"
+    filter="url(#glow)"
+  />
+
+  <text
+    x="47"
+    y="58"
+    fill="url(#quote)"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="0.5"
+  >
+    "A small step in code today
+  </text>
+
+  <text
+    x="47"
+    y="81"
+    fill="url(#quote)"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="0.5"
+  >
+    can be a big step in your future."
+  </text>
+
+  <text
+    x="47"
+    y="116"
+    fill="#7C5CFF"
+    font-family="monospace"
+    font-size="11"
+  >
+    — KEEP BUILDING 🚀
+  </text>
+
+  <text
+    x="47"
+    y="143"
+    fill="#445372"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2"
+  >
+    BUILD // LEARN // IMPROVE // REPEAT
+  </text>
+
+
+  <!-- =====================================================
+       MINDSET PANEL
+  ====================================================== -->
+
+  <rect
+    x="400"
+    y="20"
+    width="420"
+    height="150"
+    rx="10"
+    fill="#080D19"
+    stroke="#202D49"
+  />
+
+
+  <!-- Caffeine -->
+
+  <g>
+
+    <text
+      x="430"
+      y="55"
+      font-size="24"
+    >
+      ☕
+    </text>
+
+    <text
+      x="468"
+      y="48"
+      fill="#8795B2"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1"
+    >
+      CAFFEINE
+    </text>
+
+    <text
+      x="468"
+      y="69"
+      fill="#00F0A0"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+    >
+      HIGH
+    </text>
+
+  </g>
+
+
+  <!-- Focus -->
+
+  <g>
+
+    <text
+      x="430"
+      y="108"
+      font-size="24"
+    >
+      🎯
+    </text>
+
+    <text
+      x="468"
+      y="101"
+      fill="#8795B2"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1"
+    >
+      FOCUS
+    </text>
+
+    <text
+      x="468"
+      y="122"
+      fill="#00F0A0"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+    >
+      BUILDING
+    </text>
+
+  </g>
+
+
+  <!-- Learning -->
+
+  <g>
+
+    <text
+      x="630"
+      y="55"
+      font-size="24"
+    >
+      📖
+    </text>
+
+    <text
+      x="668"
+      y="48"
+      fill="#8795B2"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1"
+    >
+      LEARNING
+    </text>
+
+    <text
+      x="668"
+      y="69"
+      fill="#00F0A0"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+    >
+      AI / LLMs
+    </text>
+
+  </g>
+
+
+  <!-- Mood -->
+
+  <g>
+
+    <text
+      x="630"
+      y="108"
+      font-size="24"
+    >
+      🎮
+    </text>
+
+    <text
+      x="668"
+      y="101"
+      fill="#8795B2"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1"
+    >
+      MOOD
+    </text>
+
+    <text
+      x="668"
+      y="122"
+      fill="#00F0A0"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+    >
+      PRODUCTIVE
+    </text>
+
+  </g>
+
+
+  <!-- Small separator -->
+
+  <line
+    x1="610"
+    y1="35"
+    x2="610"
+    y2="145"
+    stroke="#1D2943"
+  />
+
+
+  <!-- =====================================================
+       FINAL MESSAGE PANEL
+  ====================================================== -->
+
+  <rect
+    x="835"
+    y="20"
+    width="345"
+    height="150"
+    rx="10"
+    fill="#080B18"
+    stroke="#29365B"
+  />
+
+  <!-- Animated signal -->
+
+  <path
+    d="M836 126
+       L862 126
+       L878 113
+       L892 129
+       L910 118
+       L928 137
+       L948 111
+       L966 124
+       L986 104
+       L1005 123
+       L1025 116
+       L1042 132
+       L1062 108
+       L1082 122
+       L1100 101
+       L1120 116
+       L1140 108
+       L1158 120
+       L1180 105"
+    stroke="url(#neon)"
+    stroke-width="1.5"
+    opacity="0.7"
+  />
+
+  <!-- Moving signal -->
+
+  <circle
+    cx="836"
+    cy="126"
+    r="3"
+    fill="#00E5FF"
+    filter="url(#glow)"
+  >
+
+    <animateMotion
+      dur="4s"
+      repeatCount="indefinite"
+      path="
+        M0 0
+        L26 0
+        L42 -13
+        L56 3
+        L74 -8
+        L92 11
+        L112 -15
+        L130 -2
+        L150 -22
+        L169 -3
+        L189 -10
+        L206 6
+        L226 -18
+        L246 -4
+        L264 -25
+        L284 -10
+        L304 -18
+        L322 -6
+        L344 -21
+      "
+    />
+
+  </circle>
+
+
+  <!-- Main message -->
+
+  <text
+    x="1007"
+    y="62"
+    text-anchor="middle"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    THANKS FOR VISITING!
+  </text>
+
+  <text
+    x="1007"
+    y="88"
+    text-anchor="middle"
+    fill="#AEBBD4"
+    font-family="monospace"
+    font-size="9"
+  >
+    LET'S CONNECT AND BUILD
+  </text>
+
+  <text
+    x="1007"
+    y="105"
+    text-anchor="middle"
+    fill="#AEBBD4"
+    font-family="monospace"
+    font-size="9"
+  >
+    SOMETHING AMAZING TOGETHER.
+  </text>
+
+
+  <!-- Bottom telemetry -->
+
+  <text
+    x="1007"
+    y="153"
+    text-anchor="middle"
+    fill="#43516D"
+    font-family="monospace"
+    font-size="7"
+    letter-spacing="2"
+  >
+    SYSTEM ONLINE // END OF TRANSMISSION
+  </text>
+
+
+  <!-- =====================================================
+       CORNER STATUS
+  ====================================================== -->
+
+  <circle
+    cx="1160"
+    cy="42"
+    r="4"
+    fill="#00F0A0"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="1;0.25;1"
+      dur="1.8s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- =====================================================
+       SCAN LINE
+  ====================================================== -->
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="1"
+    fill="url(#neon)"
+    opacity="0.3"
+  >
+
+    <animate
+      attributeName="y"
+      values="0;190;0"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </rect>
+
+</svg>
