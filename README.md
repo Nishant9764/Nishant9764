@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="/hero-scene.png"
+    src="./hero-scene.png"
     width="100%"
     alt="Developer working at night — Build, Learn, Improve, Repeat"
   />
