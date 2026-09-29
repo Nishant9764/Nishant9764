@@ -1,0 +1,1119 @@
+<svg
+  width="1200"
+  height="650"
+  viewBox="0 0 1200 650"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="650">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="48%" stop-color="#080A1C"/>
+      <stop offset="100%" stop-color="#11051D"/>
+    </linearGradient>
+
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="purplePink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#FF3CAC"/>
+    </linearGradient>
+
+    <linearGradient id="cyanPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#FF3CAC"/>
+    </linearGradient>
+
+    <filter id="cyanGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="purpleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- =====================================================
+         PROJECT ICONS
+    ====================================================== -->
+
+    <!-- AI / Agent -->
+    <symbol id="agentIcon" viewBox="0 0 64 64">
+
+      <rect
+        x="8"
+        y="8"
+        width="48"
+        height="48"
+        rx="12"
+        fill="#0B1022"
+        stroke="#8B5CF6"
+        stroke-width="2"
+      />
+
+      <circle
+        cx="32"
+        cy="28"
+        r="8"
+        fill="none"
+        stroke="#00E5FF"
+        stroke-width="2.5"
+      />
+
+      <circle cx="29" cy="27" r="1.8" fill="#00E5FF"/>
+      <circle cx="35" cy="27" r="1.8" fill="#00E5FF"/>
+
+      <path
+        d="M26 34C28 37 36 37 38 34"
+        stroke="#A78BFA"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M32 10V16M10 32H16M48 32H54"
+        stroke="#FF3CAC"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+
+    </symbol>
+
+
+    <!-- Health / AI -->
+    <symbol id="healthIcon" viewBox="0 0 64 64">
+
+      <rect
+        x="8"
+        y="8"
+        width="48"
+        height="48"
+        rx="12"
+        fill="#0B1022"
+        stroke="#FF3CAC"
+        stroke-width="2"
+      />
+
+      <path
+        d="M32 48C30 45 18 38 18 27C18 21 22 18 27 18C30 18 32 20 32 23C32 20 35 18 38 18C43 18 47 21 47 27C47 38 35 45 32 48Z"
+        fill="none"
+        stroke="#FF3CAC"
+        stroke-width="2.5"
+      />
+
+      <path
+        d="M24 32H29L32 25L35 38L38 32H42"
+        stroke="#00E5FF"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+    </symbol>
+
+
+    <!-- Event / System -->
+    <symbol id="eventIcon" viewBox="0 0 64 64">
+
+      <rect
+        x="8"
+        y="8"
+        width="48"
+        height="48"
+        rx="12"
+        fill="#0B1022"
+        stroke="#00E5FF"
+        stroke-width="2"
+      />
+
+      <rect
+        x="18"
+        y="18"
+        width="28"
+        height="28"
+        rx="4"
+        fill="none"
+        stroke="#00E5FF"
+        stroke-width="2"
+      />
+
+      <path
+        d="M24 27H40M24 34H40M24 41H34"
+        stroke="#A78BFA"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+
+      <circle cx="42" cy="43" r="5" fill="#FF3CAC"/>
+      <path
+        d="M40 43L42 45L45 41"
+        stroke="#fff"
+        stroke-width="1.5"
+      />
+
+    </symbol>
+
+
+    <!-- Travel / Map -->
+    <symbol id="mapIcon" viewBox="0 0 64 64">
+
+      <rect
+        x="8"
+        y="8"
+        width="48"
+        height="48"
+        rx="12"
+        fill="#0B1022"
+        stroke="#8B5CF6"
+        stroke-width="2"
+      />
+
+      <path
+        d="M18 20L30 15L42 20L46 18V45L34 50L22 45L18 47V20Z"
+        fill="none"
+        stroke="#A78BFA"
+        stroke-width="2"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M30 15V43M42 20V48"
+        stroke="#00E5FF"
+        stroke-width="2"
+      />
+
+      <circle
+        cx="34"
+        cy="29"
+        r="5"
+        fill="none"
+        stroke="#FF3CAC"
+        stroke-width="2"
+      />
+
+      <circle
+        cx="34"
+        cy="29"
+        r="2"
+        fill="#FF3CAC"
+      />
+
+    </symbol>
+
+  </defs>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <rect
+    width="1200"
+    height="650"
+    rx="22"
+    fill="url(#bg)"
+  />
+
+  <!-- subtle grid -->
+
+  <g opacity="0.055" stroke="#6EE7FF" stroke-width="1">
+
+    <path d="M0 80H1200"/>
+    <path d="M0 160H1200"/>
+    <path d="M0 240H1200"/>
+    <path d="M0 320H1200"/>
+    <path d="M0 400H1200"/>
+    <path d="M0 480H1200"/>
+    <path d="M0 560H1200"/>
+
+    <path d="M100 0V650"/>
+    <path d="M200 0V650"/>
+    <path d="M300 0V650"/>
+    <path d="M400 0V650"/>
+    <path d="M500 0V650"/>
+    <path d="M600 0V650"/>
+    <path d="M700 0V650"/>
+    <path d="M800 0V650"/>
+    <path d="M900 0V650"/>
+    <path d="M1000 0V650"/>
+    <path d="M1100 0V650"/>
+
+  </g>
+
+
+  <!-- atmospheric glow -->
+
+  <circle
+    cx="1100"
+    cy="80"
+    r="170"
+    fill="#7C3AED"
+    opacity="0.035"
+  />
+
+  <circle
+    cx="80"
+    cy="570"
+    r="150"
+    fill="#00E5FF"
+    opacity="0.025"
+  />
+
+
+  <!-- =====================================================
+       OUTER FRAME
+  ====================================================== -->
+
+  <rect
+    x="14"
+    y="14"
+    width="1172"
+    height="622"
+    rx="18"
+    stroke="url(#cyanPurple)"
+    stroke-opacity="0.5"
+    stroke-width="1.5"
+  />
+
+  <path
+    d="M35 14H235"
+    stroke="#00E5FF"
+    stroke-width="3"
+    filter="url(#cyanGlow)"
+  />
+
+  <path
+    d="M965 636H1165"
+    stroke="#FF3CAC"
+    stroke-width="3"
+    filter="url(#purpleGlow)"
+  />
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <text
+    x="42"
+    y="48"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2"
+  >
+    04 / SELECTED_PROJECTS
+  </text>
+
+  <text
+    x="1158"
+    y="48"
+    text-anchor="end"
+    fill="#475569"
+    font-family="monospace"
+    font-size="10"
+  >
+    BUILD_LOG // 04
+  </text>
+
+
+  <text
+    x="42"
+    y="92"
+    fill="#F8FAFC"
+    font-family="sans-serif"
+    font-size="28"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    THINGS I'VE BUILT.
+  </text>
+
+  <text
+    x="42"
+    y="119"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+  >
+    projects where engineering meets real-world problems.
+  </text>
+
+
+  <!-- =====================================================
+       PROJECT 01 — NEXUS AGENT
+  ====================================================== -->
+
+  <rect
+    x="42"
+    y="145"
+    width="548"
+    height="190"
+    rx="14"
+    fill="#080D20"
+    stroke="#1E293B"
+  />
+
+  <rect
+    x="42"
+    y="145"
+    width="4"
+    height="190"
+    rx="2"
+    fill="#00E5FF"
+  />
+
+  <use
+    href="#agentIcon"
+    x="67"
+    y="168"
+    width="58"
+    height="58"
+  />
+
+  <text
+    x="140"
+    y="178"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="1.5"
+  >
+    PROJECT / 01
+  </text>
+
+  <text
+    x="140"
+    y="204"
+    fill="#F8FAFC"
+    font-family="sans-serif"
+    font-size="20"
+    font-weight="700"
+  >
+    Nexus-Agent
+  </text>
+
+  <text
+    x="140"
+    y="227"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10"
+  >
+    AI-POWERED DEVELOPER WORKFLOW
+  </text>
+
+  <text
+    x="67"
+    y="254"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    Multi-agent workflow combining RAG,
+  </text>
+
+  <text
+    x="67"
+    y="272"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    resume intelligence and AI-assisted tooling.
+  </text>
+
+  <rect
+    x="67"
+    y="292"
+    width="70"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="102"
+    y="307"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    PYTHON
+  </text>
+
+  <rect
+    x="143"
+    y="292"
+    width="68"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="177"
+    y="307"
+    text-anchor="middle"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="8"
+  >
+    REACT
+  </text>
+
+  <rect
+    x="217"
+    y="292"
+    width="72"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="253"
+    y="307"
+    text-anchor="middle"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="8"
+  >
+    RAG
+  </text>
+
+  <rect
+    x="295"
+    y="292"
+    width="75"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="332"
+    y="307"
+    text-anchor="middle"
+    fill="#F472B6"
+    font-family="monospace"
+    font-size="8"
+  >
+    AGENTS
+  </text>
+
+
+  <!-- =====================================================
+       PROJECT 02 — SMARTCUREX
+  ====================================================== -->
+
+  <rect
+    x="610"
+    y="145"
+    width="548"
+    height="190"
+    rx="14"
+    fill="#080D20"
+    stroke="#1E293B"
+  />
+
+  <rect
+    x="610"
+    y="145"
+    width="4"
+    height="190"
+    rx="2"
+    fill="#FF3CAC"
+  />
+
+  <use
+    href="#healthIcon"
+    x="635"
+    y="168"
+    width="58"
+    height="58"
+  />
+
+  <text
+    x="708"
+    y="178"
+    fill="#FF3CAC"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="1.5"
+  >
+    PROJECT / 02
+  </text>
+
+  <text
+    x="708"
+    y="204"
+    fill="#F8FAFC"
+    font-family="sans-serif"
+    font-size="20"
+    font-weight="700"
+  >
+    SmartCureX
+  </text>
+
+  <text
+    x="708"
+    y="227"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10"
+  >
+    AI-ASSISTED HEALTH PLATFORM
+  </text>
+
+  <text
+    x="635"
+    y="254"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    Machine learning and computer vision
+  </text>
+
+  <text
+    x="635"
+    y="272"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    models wrapped in a full-stack application.
+  </text>
+
+  <rect
+    x="635"
+    y="292"
+    width="70"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="670"
+    y="307"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    FLASK
+  </text>
+
+  <rect
+    x="711"
+    y="292"
+    width="74"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="748"
+    y="307"
+    text-anchor="middle"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="8"
+  >
+    REACT
+  </text>
+
+  <rect
+    x="791"
+    y="292"
+    width="78"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="830"
+    y="307"
+    text-anchor="middle"
+    fill="#F472B6"
+    font-family="monospace"
+    font-size="8"
+  >
+    ML / CV
+  </text>
+
+  <rect
+    x="875"
+    y="292"
+    width="82"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="916"
+    y="307"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    FIREBASE
+  </text>
+
+
+  <!-- =====================================================
+       PROJECT 03 — EVENT JUDGING SYSTEM
+  ====================================================== -->
+
+  <rect
+    x="42"
+    y="355"
+    width="548"
+    height="190"
+    rx="14"
+    fill="#080D20"
+    stroke="#1E293B"
+  />
+
+  <rect
+    x="42"
+    y="355"
+    width="4"
+    height="190"
+    rx="2"
+    fill="#8B5CF6"
+  />
+
+  <use
+    href="#eventIcon"
+    x="67"
+    y="378"
+    width="58"
+    height="58"
+  />
+
+  <text
+    x="140"
+    y="388"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="1.5"
+  >
+    PROJECT / 03
+  </text>
+
+  <text
+    x="140"
+    y="414"
+    fill="#F8FAFC"
+    font-family="sans-serif"
+    font-size="20"
+    font-weight="700"
+  >
+    Event Judging System
+  </text>
+
+  <text
+    x="140"
+    y="437"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10"
+  >
+    EVENT MANAGEMENT + SCORING
+  </text>
+
+  <text
+    x="67"
+    y="464"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    Web platform for assignments, judging,
+  </text>
+
+  <text
+    x="67"
+    y="482"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    scoring and streamlined event coordination.
+  </text>
+
+  <rect
+    x="67"
+    y="502"
+    width="72"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="103"
+    y="517"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    NODE.JS
+  </text>
+
+  <rect
+    x="145"
+    y="502"
+    width="77"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="183"
+    y="517"
+    text-anchor="middle"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="8"
+  >
+    EXPRESS
+  </text>
+
+  <rect
+    x="228"
+    y="502"
+    width="70"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="263"
+    y="517"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    MYSQL
+  </text>
+
+  <rect
+    x="304"
+    y="502"
+    width="69"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="338"
+    y="517"
+    text-anchor="middle"
+    fill="#F472B6"
+    font-family="monospace"
+    font-size="8"
+  >
+    DOCKER
+  </text>
+
+
+  <!-- =====================================================
+       PROJECT 04 — INCREDIBLE KARNATAKA
+  ====================================================== -->
+
+  <rect
+    x="610"
+    y="355"
+    width="548"
+    height="190"
+    rx="14"
+    fill="#080D20"
+    stroke="#1E293B"
+  />
+
+  <rect
+    x="610"
+    y="355"
+    width="4"
+    height="190"
+    rx="2"
+    fill="#00E5FF"
+  />
+
+  <use
+    href="#mapIcon"
+    x="635"
+    y="378"
+    width="58"
+    height="58"
+  />
+
+  <text
+    x="708"
+    y="388"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="1.5"
+  >
+    PROJECT / 04
+  </text>
+
+  <text
+    x="708"
+    y="414"
+    fill="#F8FAFC"
+    font-family="sans-serif"
+    font-size="20"
+    font-weight="700"
+  >
+    Incredible Karnataka
+  </text>
+
+  <text
+    x="708"
+    y="437"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10"
+  >
+    DISCOVERY + CREATOR PLATFORM
+  </text>
+
+  <text
+    x="635"
+    y="464"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    Platform concept connecting explorers,
+  </text>
+
+  <text
+    x="635"
+    y="482"
+    fill="#CBD5E1"
+    font-family="sans-serif"
+    font-size="11"
+  >
+    creators and hidden local experiences.
+  </text>
+
+  <rect
+    x="635"
+    y="502"
+    width="74"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="672"
+    y="517"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    NEXT.JS
+  </text>
+
+  <rect
+    x="715"
+    y="502"
+    width="82"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="756"
+    y="517"
+    text-anchor="middle"
+    fill="#A78BFA"
+    font-family="monospace"
+    font-size="8"
+  >
+    MONGODB
+  </text>
+
+  <rect
+    x="803"
+    y="502"
+    width="67"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="836"
+    y="517"
+    text-anchor="middle"
+    fill="#F472B6"
+    font-family="monospace"
+    font-size="8"
+  >
+    MAPS
+  </text>
+
+  <rect
+    x="876"
+    y="502"
+    width="86"
+    height="23"
+    rx="6"
+    fill="#10182C"
+    stroke="#26334F"
+  />
+
+  <text
+    x="919"
+    y="517"
+    text-anchor="middle"
+    fill="#67E8F9"
+    font-family="monospace"
+    font-size="8"
+  >
+    FULL STACK
+  </text>
+
+
+  <!-- =====================================================
+       BOTTOM SIGNAL
+  ====================================================== -->
+
+  <line
+    x1="42"
+    y1="575"
+    x2="1158"
+    y2="575"
+    stroke="#1E293B"
+  />
+
+  <circle
+    cx="42"
+    cy="575"
+    r="3"
+    fill="#00E5FF"
+    filter="url(#cyanGlow)"
+  />
+
+  <text
+    x="58"
+    y="600"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="1"
+  >
+    BUILD_LOG
+  </text>
+
+  <text
+    x="145"
+    y="600"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="9"
+  >
+    FULL STACK
+  </text>
+
+  <circle cx="225" cy="596" r="2" fill="#00E5FF"/>
+
+  <text
+    x="240"
+    y="600"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="9"
+  >
+    AI / LLM
+  </text>
+
+  <circle cx="308" cy="596" r="2" fill="#8B5CF6"/>
+
+  <text
+    x="323"
+    y="600"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="9"
+  >
+    PRODUCT
+  </text>
+
+  <circle cx="390" cy="596" r="2" fill="#FF3CAC"/>
+
+  <text
+    x="405"
+    y="600"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="9"
+  >
+    EXPERIMENTATION
+  </text>
+
+  <text
+    x="1158"
+    y="600"
+    text-anchor="end"
+    fill="#334155"
+    font-family="monospace"
+    font-size="9"
+  >
+    IDEA → SYSTEM → PRODUCT
+  </text>
+
+</svg>
