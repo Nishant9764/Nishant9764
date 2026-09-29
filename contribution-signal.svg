@@ -1,0 +1,537 @@
+<svg
+  width="1200"
+  height="430"
+  viewBox="0 0 1200 430"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- GRID -->
+
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M40 0H0V40"
+        stroke="#17233D"
+        stroke-width="1"
+      />
+    </pattern>
+
+
+    <!-- MAIN ACCENT -->
+
+    <linearGradient
+      id="accent"
+      x1="70"
+      y1="0"
+      x2="1130"
+      y2="0"
+    >
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+
+
+    <!-- GLOW -->
+
+    <filter id="glow">
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"
+      />
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+
+    <!-- STRONGER GLOW -->
+
+    <filter id="strongGlow">
+
+      <feGaussianBlur
+        stdDeviation="8"
+        result="blur"
+      />
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+  </defs>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <rect
+    width="1200"
+    height="430"
+    fill="#070B16"
+  />
+
+  <rect
+    width="1200"
+    height="430"
+    fill="url(#grid)"
+    opacity="0.42"
+  />
+
+
+  <!-- =====================================================
+       CONTINUATION LINE
+  ====================================================== -->
+
+  <path
+    d="
+      M600 0
+      V25
+      C600 38 588 46 575 46
+      H430
+    "
+    stroke="#00E5FF"
+    stroke-width="1.5"
+    opacity="0.8"
+    filter="url(#glow)"
+  />
+
+  <circle
+    cx="600"
+    cy="25"
+    r="3"
+    fill="#00E5FF"
+    filter="url(#glow)"
+  />
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <text
+    x="72"
+    y="76"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="3"
+  >
+    08 / CONTRIBUTION SIGNAL
+  </text>
+
+
+  <text
+    x="72"
+    y="108"
+    fill="#F4F7FF"
+    font-family="Arial, sans-serif"
+    font-size="26"
+    font-weight="700"
+    letter-spacing="1"
+  >
+    BUILDING IN PUBLIC
+  </text>
+
+
+  <text
+    x="72"
+    y="135"
+    fill="#77829B"
+    font-family="monospace"
+    font-size="12"
+  >
+    IDEAS → SYSTEMS → ITERATION
+  </text>
+
+
+  <!-- LIVE INDICATOR -->
+
+  <circle
+    cx="1050"
+    cy="78"
+    r="5"
+    fill="#00E5FF"
+    filter="url(#strongGlow)"
+  >
+
+    <animate
+      attributeName="opacity"
+      values="1;0.25;1"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <text
+    x="1065"
+    y="82"
+    fill="#7F8DA8"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="2"
+  >
+    ACTIVE
+  </text>
+
+
+  <!-- =====================================================
+       MAIN STATEMENT
+  ====================================================== -->
+
+  <rect
+    x="72"
+    y="170"
+    width="1056"
+    height="78"
+    rx="12"
+    fill="#091321"
+    stroke="#1A2941"
+  />
+
+
+  <rect
+    x="72"
+    y="170"
+    width="4"
+    height="78"
+    rx="2"
+    fill="url(#accent)"
+  />
+
+
+  <text
+    x="98"
+    y="202"
+    fill="#52627C"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2"
+  >
+    CURRENT SIGNAL
+  </text>
+
+
+  <text
+    x="98"
+    y="229"
+    fill="#EAF2FF"
+    font-family="Arial, sans-serif"
+    font-size="15"
+    font-weight="600"
+  >
+    I learn by turning ideas into working systems.
+  </text>
+
+
+  <!-- =====================================================
+       PROCESS PIPELINE
+  ====================================================== -->
+
+  <text
+    x="72"
+    y="282"
+    fill="#52627C"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2"
+  >
+    DEVELOPMENT LOOP
+  </text>
+
+
+  <!-- BASE LINE -->
+
+  <path
+    d="
+      M145 326
+      H1055
+    "
+    stroke="#202E47"
+    stroke-width="2"
+  />
+
+
+  <!-- GRADIENT LINE -->
+
+  <path
+    d="
+      M145 326
+      H1055
+    "
+    stroke="url(#accent)"
+    stroke-width="1"
+    opacity="0.7"
+  />
+
+
+  <!-- MOVING SIGNAL -->
+
+  <circle
+    cx="145"
+    cy="326"
+    r="4"
+    fill="#00E5FF"
+    filter="url(#glow)"
+  >
+
+    <animate
+      attributeName="cx"
+      values="145;1055;145"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <!-- =====================================================
+       NODE 01
+  ====================================================== -->
+
+  <circle
+    cx="145"
+    cy="326"
+    r="18"
+    fill="#091321"
+    stroke="#00E5FF"
+    stroke-width="1.5"
+  >
+
+    <animate
+      attributeName="r"
+      values="18;21;18"
+      dur="2.5s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <text
+    x="145"
+    y="330"
+    text-anchor="middle"
+    fill="#00E5FF"
+    font-family="monospace"
+    font-size="8"
+    font-weight="700"
+  >
+    01
+  </text>
+
+
+  <text
+    x="145"
+    y="362"
+    text-anchor="middle"
+    fill="#F4F7FF"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+  >
+    EXPLORE
+  </text>
+
+
+  <!-- =====================================================
+       NODE 02
+  ====================================================== -->
+
+  <circle
+    cx="448"
+    cy="326"
+    r="18"
+    fill="#0D1222"
+    stroke="#6074FF"
+    stroke-width="1.5"
+  />
+
+  <text
+    x="448"
+    y="330"
+    text-anchor="middle"
+    fill="#7183FF"
+    font-family="monospace"
+    font-size="8"
+    font-weight="700"
+  >
+    02
+  </text>
+
+
+  <text
+    x="448"
+    y="362"
+    text-anchor="middle"
+    fill="#F4F7FF"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+  >
+    BUILD
+  </text>
+
+
+  <!-- =====================================================
+       NODE 03
+  ====================================================== -->
+
+  <circle
+    cx="752"
+    cy="326"
+    r="18"
+    fill="#111126"
+    stroke="#9B67FF"
+    stroke-width="1.5"
+  />
+
+  <text
+    x="752"
+    y="330"
+    text-anchor="middle"
+    fill="#A276FF"
+    font-family="monospace"
+    font-size="8"
+    font-weight="700"
+  >
+    03
+  </text>
+
+
+  <text
+    x="752"
+    y="362"
+    text-anchor="middle"
+    fill="#F4F7FF"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+  >
+    BREAK
+  </text>
+
+
+  <!-- =====================================================
+       NODE 04
+  ====================================================== -->
+
+  <circle
+    cx="1055"
+    cy="326"
+    r="18"
+    fill="#171021"
+    stroke="#FF55D6"
+    stroke-width="1.5"
+  >
+
+    <animate
+      attributeName="r"
+      values="18;21;18"
+      dur="2.5s"
+      begin="1.25s"
+      repeatCount="indefinite"
+    />
+
+  </circle>
+
+
+  <text
+    x="1055"
+    y="330"
+    text-anchor="middle"
+    fill="#FF68D9"
+    font-family="monospace"
+    font-size="8"
+    font-weight="700"
+  >
+    04
+  </text>
+
+
+  <text
+    x="1055"
+    y="362"
+    text-anchor="middle"
+    fill="#F4F7FF"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+  >
+    IMPROVE
+  </text>
+
+
+  <!-- =====================================================
+       BOTTOM SIGNAL
+  ====================================================== -->
+
+  <path
+    d="M72 390H1128"
+    stroke="#17243B"
+    stroke-width="1"
+  />
+
+
+  <text
+    x="72"
+    y="410"
+    fill="#52627C"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2"
+  >
+    BUILD → DEBUG → LEARN → SHIP
+  </text>
+
+
+  <text
+    x="1128"
+    y="410"
+    text-anchor="end"
+    fill="#263650"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2"
+  >
+    SYSTEM / 08
+  </text>
+
+
+  <!-- =====================================================
+       ANIMATED SCAN LINE
+  ====================================================== -->
+
+  <rect
+    x="72"
+    y="165"
+    width="2"
+    height="88"
+    fill="#00E5FF"
+    opacity="0.5"
+  >
+
+    <animate
+      attributeName="x"
+      values="72;1128;72"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+
+  </rect>
+
+</svg>
