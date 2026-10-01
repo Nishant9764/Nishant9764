@@ -66,8 +66,9 @@
 
 <p align="center">
   <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=Nishant9764&hide_border=true&background=070B16&ring=00E5FF&fire=FF4FD8&currStreakLabel=00E5FF&sideLabels=FFFFFF&dates=52627C"
+    src="https://github-readme-streak-stats.herokuapp.com/?user=Nishant9764&hide_border=true&background=070B16&ring=00E5FF&fire=FF4FD8&currStreakLabel=00E5FF&sideLabels=FFFFFF&dates=8B9BB4&currStreakNum=FFFFFF&sideNums=FFFFFF&stroke=1A2740"
     width="90%"
+    alt="GitHub Streak Stats"
   />
 </p>
 
