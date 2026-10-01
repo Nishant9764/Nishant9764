@@ -55,7 +55,7 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=A9B7D0&icon_color=7C5CFF"
+    src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=FFFFFF&icon_color=7C5CFF"
     height="180"
   />
   <img
