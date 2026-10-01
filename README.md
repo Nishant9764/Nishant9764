@@ -1,94 +1,65 @@
-<!-- ========================================================= -->
-<!-- SECTION 01 — DEVELOPER HERO                              -->
-<!-- ========================================================= -->
+<div align="center">
 
-<p align="center">
-  <img
-    src="./hero-scene.png"
-    width="48%"
-    alt="Developer workspace — Build, Learn, Improve, Repeat"
-  />
-  <img
-    src="./hero.svg"
-    width="48%"
-    alt="Nishant — Developer Control Center"
-  />
-</p>
+<!-- 👇 Replace Nishant9764 everywhere (Find & Replace) -->
 
-<br>
+<img src="assets/hero.svg" alt="Braham Abhijat Singh – hero" width="100%"/>
 
-<!-- ========================================================= -->
-<!-- SECTION 02 — DEVELOPER IDENTITY                          -->
-<!-- ========================================================= -->
+<a href="https://YOUR_PORTFOLIO_URL"><img src="https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=firefox&logoColor=white"/></a>
+<a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://YOUR_RESUME_URL"><img src="https://img.shields.io/badge/Resume-6C47FF?style=for-the-badge&logo=readme&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=Nishant9764&label=Visitors&color=7c3aed&style=for-the-badge"/>
 
-<p align="center">
-  <img
-    src="./identity.svg"
-    width="100%"
-    alt="Nishant — Developer Identity and Current Focus"
-  />
-</p>
+<img src="assets/divider.svg" width="100%"/>
 
-<p align="center">
-  <img src="./mission.svg" width="100%" alt="Current Mission"/>
-</p>
+<table>
+<tr>
+<td valign="top"><img src="assets/terminal.svg" width="100%"/></td>
+<td valign="top"><img src="assets/listening.svg" width="100%"/></td>
+</tr>
+</table>
 
-## 04 / SELECTED PROJECTS
+<img src="assets/divider.svg" width="100%"/>
 
-<p align="center">
-  <img src="./projects.svg" width="100%" alt="Selected Projects"/>
-</p>
+<img src="assets/t_stack.svg" width="100%"/>
 
-## 05 / HOW I BUILD
+<img src="https://skillicons.dev/icons?i=py,js,ts,react,next,nodejs,tailwind,mongodb,postgres,firebase,git,github,docker,figma,vscode,vercel&perline=16" />
 
-<p align="center">
-  <img src="./how-i-build.svg" width="100%" alt="How I Build"/>
-</p>
+<img src="assets/divider.svg" width="100%"/>
 
-## 06 / ENGINEERING STACK
+<img src="assets/t_activity.svg" width="100%"/>
 
-<p align="center">
-  <img src="./engineering-stack.svg" width="100%" alt="Engineering Stack"/>
-</p>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Nishant9764&bg_color=070816&color=5ef2ff&line=a78bfa&point=ff6ad5&area=true&area_color=a78bfa&hide_border=true&radius=16" width="100%"/>
 
-## 07 / GITHUB TELEMETRY
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&theme=tokyonight&bg_color=080a1e&border_color=1d2a5c&hide_border=false&border_radius=16&title_color=5ef2ff&icon_color=a78bfa&rank_icon=github"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nishant9764&layout=compact&theme=tokyonight&bg_color=080a1e&border_color=1d2a5c&border_radius=16&title_color=5ef2ff"/>
+<img height="170" src="https://streak-stats.demolab.com/?user=Nishant9764&theme=tokyonight&background=080a1e&border=1d2a5c&ring=a78bfa&fire=ff6ad5&currStreakLabel=5ef2ff&border_radius=16"/>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=Nishant9764&show_icons=true&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=FFFFFF&icon_color=7C5CFF"
-    height="180"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nishant9764&layout=compact&hide_border=true&bg_color=070B16&title_color=00E5FF&text_color=FFFFFF"
-    height="180"
-  />
-</p>
+<img src="assets/divider.svg" width="100%"/>
 
-<p align="center">
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=Nishant9764&hide_border=true&background=070B16&ring=00E5FF&fire=FF4FD8&currStreakLabel=00E5FF&sideLabels=FFFFFF&dates=8B9BB4&currStreakNum=FFFFFF&sideNums=FFFFFF&stroke=1A2740"
-    width="90%"
-    alt="GitHub Streak Stats"
-  />
-</p>
+<img src="assets/t_projects.svg" width="100%"/>
 
-## 08 / CONTRIBUTION SIGNAL
+<table>
+<tr>
+<td><a href="https://github.com/Nishant9764/ai-recruiter"><img src="assets/p1.svg" width="100%"/></a></td>
+<td><a href="https://github.com/Nishant9764/devnotes"><img src="assets/p2.svg" width="100%"/></a></td>
+<td><a href="https://github.com/Nishant9764/portfolio-v2"><img src="assets/p3.svg" width="100%"/></a></td>
+</tr>
+</table>
 
-<p align="center">
-  <img
-    src="./contribution-signal.svg"
-    width="100%"
-    alt="Contribution Signal"
-  />
-</p>
+<img src="assets/divider.svg" width="100%"/>
 
-## 09 / CONTACT ORBIT
+<img src="assets/t_snake.svg" width="100%"/>
 
-<p align="center">
-  <img src="./connect.svg" width="100%" alt="Contact Orbit"/>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nishant9764/Nishant9764/output/github-snake-dark.svg">
+  <img alt="snake" src="https://raw.githubusercontent.com/Nishant9764/Nishant9764/output/github-snake.svg" width="100%">
+</picture>
 
+<img src="assets/divider.svg" width="100%"/>
 
-<p align="center">
-  <img src="./footer.svg" width="100%" alt="Developer Footer"/>
-</p>
+<img src="assets/vibes.svg" width="100%"/>
+
+<img src="assets/footer.svg" width="100%"/>
+
+</div>
