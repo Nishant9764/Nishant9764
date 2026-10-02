@@ -1,7 +1,5 @@
 <div align="center">
 
-<!-- 1) Create a PUBLIC repo named exactly like your username  2) Find & replace Nishant9764, YOUR_PORTFOLIO_URL, YOUR_LINKEDIN, YOUR_EMAIL, YOUR_RESUME_URL -->
-
 <img src="assets1/hero.svg" alt="Nishant Kumar – AI enthusiast, full stack developer, builder" width="100%"/>
 
 <a href="https://YOUR_PORTFOLIO_URL"><img src="https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=firefox&logoColor=white"/></a>
